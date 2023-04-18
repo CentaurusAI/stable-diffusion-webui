@@ -177,6 +177,7 @@ then
     printf "\n%s\n" "${delimiter}"
     printf "Accelerating launch.py..."
     printf "\n%s\n" "${delimiter}"
+    printf "\n%s\n" "${LAUNCH_SCRIPT}"
     exec accelerate launch --num_cpu_threads_per_process=6 "${LAUNCH_SCRIPT}" "$@"
 else
     printf "\n%s\n" "${delimiter}"
